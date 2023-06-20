@@ -17,7 +17,7 @@ export const todoSlice = createSlice({
       state.todos = [];
     },
     deletedTodo: (state, action) => {
-      state.todos = state.todos.filter((todo) => todo.id != action.payload);
+      state.todos = state.todos.filter((todo) => todo.id !== action.payload);
     },
     toggleForm: (state, action) => {
       state.toggleForm = !state.toggleForm;
